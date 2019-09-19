@@ -17,13 +17,13 @@
 // Each time the main tab bar appears the app check that
 // the user is authenticated
 -(RXPromise *) authenticate {
-
+    
     [BChatSDK.core goOnline];
     
     BOOL authenticated = [self isAuthenticated];
     if (authenticated) {
         
-//        [[FIRAuth auth] signOut:Nil];
+        //        [[FIRAuth auth] signOut:Nil];
         
         // If the user listeners have been added then authenticate completed successfully
         if(_isAuthenticatedThisSession) {
@@ -59,7 +59,7 @@
     
     NSError * error = Nil;
     if([[FIRAuth auth] signOut:&error]) {
-
+        
         _isAuthenticatedThisSession = NO;
         [self setLoginInfo:Nil];
         [BChatSDK.core goOffline];
@@ -106,8 +106,8 @@
                 [BChatSDK.socialLogin loginWithFacebook].thenOnMain(^id(NSString * token) {
                     FIRAuthCredential * credential = [FIRFacebookAuthProvider credentialWithAccessToken:token];
                     //[promise resolveWithResult:credential];
-                    [[FIRAuth auth] signInWithCredential:credential completion:handleResult];
-
+                    [[FIRAuth auth] signInAndRetrieveDataWithCredential:credential completion:handleResult];
+                    
                     return Nil;
                 }, ^id (NSError * error) {
                     handleResult(Nil, error);
@@ -122,7 +122,7 @@
                 [BChatSDK.socialLogin loginWithTwitter].thenOnMain(^id(NSArray * array) {
                     FIRAuthCredential * credential = [FIRTwitterAuthProvider credentialWithToken:array.firstObject
                                                                                           secret:array.lastObject];
-                    [[FIRAuth auth] signInWithCredential:credential completion:handleResult];
+                    [[FIRAuth auth] signInAndRetrieveDataWithCredential:credential completion:handleResult];
                     return Nil;
                     
                 }, ^id (NSError * error) {
@@ -138,7 +138,7 @@
                 [BChatSDK.socialLogin loginWithGoogle].thenOnMain(^id(NSArray * array) {
                     FIRAuthCredential * credential = [FIRGoogleAuthProvider credentialWithIDToken:array.firstObject
                                                                                       accessToken:array.lastObject];
-                    [[FIRAuth auth] signInWithCredential:credential completion:handleResult];
+                    [[FIRAuth auth] signInAndRetrieveDataWithCredential:credential completion:handleResult];
                     return Nil;
                     
                 }, ^id (NSError * error) {
@@ -197,13 +197,13 @@
     __weak __typeof__(self) weakSelf = self;
     return tokenPromise.thenOnMain(^id(NSString * token) {
         __typeof__(self) strongSelf = weakSelf;
-
+        
         NSString * uid = firebaseUser.uid;
         
         // Save the authentication ID for the current user
         // Set the current user
         [strongSelf setLoginInfo:@{bAuthenticationIDKey: uid,
-                             bTokenKey: [NSString safe: token]}];
+                                   bTokenKey: [NSString safe: token]}];
         
         CCUserWrapper * user = [CCUserWrapper userWithAuthUserData:firebaseUser];
         if (details.name && !user.model.name) {
@@ -214,7 +214,7 @@
             strongSelf->_isAuthenticatedThisSession = YES;
             // Update the user from the remote server
             return [user once].thenOnMain(^id(id<PUserWrapper> user_) {
-
+                
                 // If the user was authenticated automatically
                 if (!details) {
                     [BHookNotification notificationDidAuthenticate:user.model type:bHook_AuthenticationTypeCached];
@@ -228,7 +228,7 @@
                 
                 [BChatSDK.core save];
                 
-//                NSLog(@"User On: %@", user.entityID);
+                //                NSLog(@"User On: %@", user.entityID);
                 
                 // Add listeners here
                 [BChatSDK.event currentUserOn:user.entityID];
@@ -269,3 +269,4 @@
 
 
 @end
+
