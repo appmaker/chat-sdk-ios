@@ -304,7 +304,8 @@
 -(void) showProfileView {
     
     // Cannot view our own profile this way
-    if (!_message.userModel.isMe) {
+    // Never Show Profile
+    if (!_message.userModel.isMe && 1==2) {
         UIViewController * profileView = [BChatSDK.ui profileViewControllerWithUser:_message.userModel];
         [self.navigationController pushViewController:profileView animated:YES];
     }
