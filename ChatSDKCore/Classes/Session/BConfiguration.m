@@ -61,6 +61,7 @@
 @synthesize readReceiptMaxAgeInSeconds;
 @synthesize searchIndexes;
 @synthesize showProfileViewOnTap;
+@synthesize allowPrivateThreadDeletion;
 
 @synthesize vibrateOnNewMessage;
 
@@ -106,6 +107,7 @@
         defaultUserNamePrefix = @"ChatSDK";
         showEmptyChats = YES;
         allowUsersToCreatePublicChats = NO;
+        allowPrivateThreadDeletion = YES;
         
         defaultAvatarURL = [@"http://flathash.com/%@.png" stringByAppendingFormat: @"%@", self.defaultUserName];
         

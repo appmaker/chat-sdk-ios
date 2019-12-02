@@ -145,6 +145,7 @@ typedef enum {
 
 // Allow the owner of a public thread to delete it
 @property (nonatomic, readwrite) BOOL allowPublicThreadDeletion;
+@property (nonatomic, readwrite) BOOL allowPrivateThreadDeletion;
 
 // Show the unread message badge for public threads
 @property (nonatomic, readwrite) BOOL showPublicThreadsUnreadMessageBadge;

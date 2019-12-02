@@ -89,7 +89,7 @@
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return YES;
+    return BChatSDK.config.allowPrivateThreadDeletion;
 }
 
 -(void) reloadData {
