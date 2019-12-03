@@ -1,0 +1,200 @@
+/* 
+  localizable.strings
+  Chat SDK
+
+  Created by Benjamin Smiley-andrews on 22/05/2014.
+  Copyright (c) 2014 deluge. All rights reserved.
+*/
+
+"bLogout" = "Abmelden";
+"bSettings" = "Einstellungen";
+"bLogginIn" = "Anmelden";
+"bProfile" = "Profil";
+"bProfilePictures" = "Profilbilder";
+"bAddPicture" = "Bild hinzufügen";
+"bDeletePicture" = "Bild löschen";
+"bSetAsDefaultPicture" = "Als Standardbild festlegen";
+"bDeleteLastPictureWarning" = "Sie müssen ein neues Profilbild hinzufügen, bevor Sie das letzte Bild löschen können.";
+"bLoggingOut" = "Abmelden";
+"bErrorTitle" = "Fehler";
+"bUserCreatedError" = "Benutzer konnte nicht angelegt werden";
+"bContacts" = "Kontakte";
+"bConversations" = "Unterhaltungen";
+"bBroadcast" = "Übertragungen";
+"bThreadCreationError" = "Erstellung der Gruppe fehlgeschlagen";
+"bChatRooms" = "Chaträume";
+"bPickFriends" = "Kollegen auswählen";
+"bReset" = "Zurücksetzen";
+"bLogin" = "Anmelden";
+"bRegister" = "Registrieren";
+"bPassword" = "Passwort";
+"bForgotPassword" = "Passwort vergessen";
+"bEnterCredentialToResetPassword" = "E-Mail eingeben, um das Passwort zurückzusetzen";
+"bPasswordResetSuccess" = "Ihr Passwort-Reset war erfolgreich.";
+
+"bBack" = "Zurück";
+"bOpenInMaps" = "In Maps öffnen";
+"bImageSaved" = "In der Bibliothek gespeichertes Bild";
+"bLocation" = "Ort";
+"bCompose" = "Zusammenstellen";
+"bLoadingFriends" = "Lade Kollegen";
+"bLoading" = "Laden";
+"bErrorLoadingFriends" = "Fehler beim Laden von Kollegen";
+"bInvalidSelection" = "Ungültige Auswahl";
+"bSelectAtLeastOneFriend" = "Wählen Sie mindestens einen Kollegen aus";
+"bFacebook" = "Facebook";
+"bFriendsOnChatSDK" = "Facebook-Freunde";
+"bInviteFriendsFromFacebook" = "Mehr Freunde einladen";
+"bFriendsAdded_i" = "Freunde hinzugefügt %i";
+"bErrorAddingUser_s" = "Fehler beim Hinzufügen %@ zur Gruppe";
+"bSuccess" = "Erfolgreich";
+"bAdded" = "Hinzugefügt";
+"bAdd" = "Hinzufügen";
+"bCreatingThread" = "Gruppe erstellen";
+"bLogoutErrorTitle" = "Abmeldefehler";
+"bAuthenticating" = "Authentifizierung";
+"bOpen" = "Offen";
+
+"bFlagged" = "Markiert";
+"bFlag" = "Markierung";
+"bDelete" = "Löschen";
+"bUnflag" = "Entmarkieren";
+
+"bSearch" = "Suche";
+"bSearching" = "suchen";
+"bAddUsers" = "Benutzer hinzufügen";
+"bNoNearbyUsers" = "Keine Benutzer in der Nähe";
+
+"away" = "Abwesend";
+"xa" = "Länger Abwesend";
+"dnd" = "Beschäftigt";
+"available" = "Online";
+"chat" = "Online";
+"online" = "Online";
+"unavailable" = "Offline";
+"offline" = "Offline";
+
+"bCreatePublicThread" = "Öffentlichen Gruppe erstellen";
+"bThreadName" = "Name des Gruppe";
+"bThread" = "Gruppe";
+"bCancel" = "Abbrechen";
+"bOk" = "Ok";
+"bUnableToCreateThread" = "Gruppe kann nicht erstellt werden";
+"bChat" = "Chat";
+"bOptions" = "Options";
+"bChooseExistingPhoto" = "Vorhandenes Foto auswählen";
+"bTakePhoto" = "Fotografieren";
+"bTakeVideo" = "Video aufnehmen";
+"bTakePhotoOrVideo" = "Foto- oder Videoaufnahmen machen";
+"bChooseExistingPhoto" = "Vorhandenes Foto auswählen";
+"bChooseExistingVideo" = "Vorhandenes Video auswählen";
+"bCurrentLocation" = "Aktueller Standort";
+"bSend" = "Senden";
+"bReply" = "Antwort";
+"bRec" = "Aufzeichnung";
+"bWriteSomething" = "Schreiben Sie etwas.....";
+"bSlideToCancel" = "Wischen zum Abbrechen.....";
+"bName" = "Name";
+"bTapHereForContactInfo" = "Tippen Sie hier für Kontaktinformationen";
+"bPhoneNumber" = "Telefonnummer";
+"bEmail" = "E-Mail";
+"bDetails" = "Details";
+"bAddParticipant" = "Teilnehmer hinzufügen";
+"bLeaveConversation" = "Gespräch verlassen";
+"bRejoinConversation" = "Wiederaufnahme des Gesprächs";
+"bParticipants" = "Teilnehmer";
+"bActiveParticipants" = "Aktive Teilnehmer";
+"bNoActiveParticipants" = "Keine aktiven Teilnehmer";
+"bDone" = "Erledigt";
+"bEdit" = "Bearbeiten";
+"bNoMessages" = "Keine Nachrichten.....";
+"bGroupName" = "Gruppenname";
+"bLastSeen_at_" = "Zuletzt gesehen %@ bei %@";
+"b_at_" = "%@ bei %@";
+"bToday" = "Heute";
+"bYesterday" = "GEstern";
+
+"bSearchTerm" = "Suchbegriff";
+
+"bTo" = "An";
+"bEnterNamesHere" = "Geben Sie hier die Namen ein";
+"bSearchedContacts" = "Gesuchte Kontakte";
+"bNearbyContacts" = "Nächstgelegene Kontakte";
+
+"bTyping" = "Schreiben...";
+"bRefreshingUsers" = "Benutzer aktualisieren...";
+
+"bSelectYourSearch" = "Wählen Sie Ihre Suche aus";
+"bPhonebook" = "Telefonbuch";
+"bSearchWithName" = "Suche mit Namen";
+"bWarning" = "Warnung";
+"bYouMustEnableContactPermissionsToUseThisFunctionalityEnableInTheSettingsApp" = "Sie müssen die Kontaktberechtigungen aktivieren, um diese Funktionalität nutzen zu können. Sie können das unter Einstellungen ändern";
+
+"bTermsAndConditions" = "Allgemeine Geschäftsbedingungen";
+"bNoNewUsersFoundForThisSearch" = "Keine neuen Benutzer für diese Suche gefunden";
+
+"bDefaultThreadName" = "Gruppe";
+"bHoldToSendAudioMessageError" = "Halten Sie diese Taste gedrückt, um eine Audiomitteilung zu senden. Audiomeldungen müssen länger als 1 Sekunde sein.";
+"bRecording" = "Aufzeichnung";
+"bSecondsRemaining_" = "Verbleibende Sekunden %i";
+"bCancelled" = "Abgebrochen";
+
+"bAudioLengthLimitReached" = "Audio-Längenbegrenzung erreicht";
+"bSendOrDiscardRecording" = "Aufnahme senden oder verwerfen";
+
+"bAddFriend" = "Freund hinzufügen";
+"bRemoveFriend" = "Kollegen entfernen";
+
+"bBlock" = "Blockieren";
+"bUnblock" = "Blockierung aufheben";
+
+"bSave" = "Speichern";
+"bSaving" = "Speichern";
+
+"b_Ago" = "%@ vor";
+
+"b_LeftTheGroup" = "%@ verließ die Gruppe";
+"b_JoinedTheGroup" = "%@ ist der Gruppe beigetreten.";
+"bCreateGroup" = "Gruppe erstellen";
+"bYouLeftTheGroup" = "Du hast die Gruppe verlassen.";
+"bYouJoinedTheGroup" = "Du bist der Gruppe beigetreten";
+"bRejoinGroup" = "Gruppe wieder beitreten";
+
+"bDeleteContact" = "Kontakt löschen";
+"bDeleteContactMessage" = "Sind Sie sicher, dass Sie diesen Kontakt löschen möchten?";
+
+"bLocation" = "Ort";
+"bCamera" = "Kamera";
+"bChoosePhoto" = "Foto auswählen";
+"bChooseVideo" = "Video auswählen";
+"bSticker" = "Sticker";
+
+"bImageMessagesNotSupported" = "Bildmeldungen werden nicht unterstützt.";
+"bAudioMessagesNotSupported" = "Audiomeldungen werden nicht unterstützt.";
+"bStickerMessagesNotSupported" = "Sticker-Meldungen werden nicht unterstützt.";
+"bLocationMessagesNotSupported" = "Standortmeldungen werden nicht unterstützt.";
+"bVideoMessagesNotSupported" = "Videobotschaften werden nicht unterstützt.";
+
+"bRefreshingUsers" = "Aktualisierung...";
+"bInviteContact" = "Kontakt einladen";
+"bInviteByEmail" = "E-Mail";
+"bInviteBySMS" = "SMS";
+
+"bImageMessage" = "Bildnachricht";
+"bLocationMessage" = "Standortmeldung";
+"bAudioMessage" = "Audiobotschaft";
+"bVideoMessage" = "Videobotschaft";
+"bStickerMessage" = "Sticker Nachricht";
+"bFileMessage" = "Datei-Meldung";
+"bPhoto" = "Foto";
+"bFile" = "Datei";
+
+// To Translate
+
+"bAvailable" = "Verfügbar";
+"bAway" = "Abwesend";
+"bExtendedAway" = "Länger Abwesend";
+"bBusy" = "Beschäftigt";
+"bAddContact" = "Kontakt hinzufügen";
+
+"" = "";
