@@ -29,6 +29,10 @@
     config.loginUsernamePlaceholder = @"Email";
     config.allowUsersToCreatePublicChats = YES;
     
+//    config.showLocalNotificationsForPublicChats = YES;
+//    config.publicChatAutoSubscriptionEnabled = YES;
+//    config.showEmptyChats = YES;
+        
     // For the demo version of the client exire rooms after 24 hours
     config.publicChatRoomLifetimeMinutes = 60 * 24;
 
@@ -48,9 +52,7 @@
     // TODO: Fix Firebase UI!!!!!!!
     UIViewController * rootViewController = BChatSDK.ui.splashScreenNavigationController;
    
-
     [self.window setRootViewController:rootViewController];
-
     
     return YES;
 }
