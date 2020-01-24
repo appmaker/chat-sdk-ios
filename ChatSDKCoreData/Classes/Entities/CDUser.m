@@ -181,7 +181,7 @@
 
 -(UIImage *) imageAsImage {
     if (self.image) {
-        return [[UIImage imageWithData:self.image] resizedImage:bProfilePictureSize interpolationQuality:kCGInterpolationHigh];
+        return [UIImage imageWithData:self.image];
     }
     return Nil;
 }
