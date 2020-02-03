@@ -156,6 +156,27 @@
 
 -(void) updateTitle {
     [self setTitle:_thread.displayName ? _thread.displayName : [NSBundle t: bDefaultThreadName]];
+    [self setTwoLineTitle:_thread.displayName ? _thread.displayName : [NSBundle t: bDefaultThreadName] color:[UIColor blackColor] font:[UIFont boldSystemFontOfSize:16]];
+}
+
+- (void)setTwoLineTitle:(NSString *)titleText color:(UIColor *)color font:(UIFont *)font {
+    CGFloat titleLabelWidth = [UIScreen mainScreen].bounds.size.width/2;
+
+    UIView *wrapperView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, titleLabelWidth, 44)];
+
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, titleLabelWidth, 44)];
+    label.backgroundColor = [UIColor clearColor];
+    label.numberOfLines = 2;
+    label.font = font;
+    
+    label.adjustsFontSizeToFitWidth = YES;
+    label.textAlignment = UITextAlignmentCenter;
+    label.textColor = color;
+    label.text = titleText;
+
+    [wrapperView addSubview:label];
+
+    self.navigationItem.titleView = wrapperView;
 }
 
 -(void) viewWillAppear:(BOOL)animated {
