@@ -79,7 +79,7 @@
                 [threads addObject:thread];
             }
         }
-        else if (thread.type.intValue & bThreadFilterPublic && thread.type.intValue & type) {
+        else if (thread.type.intValue & bThreadFilterPublic && thread.type.intValue & type && (!thread.deletedDate || includeDeleted)) {
             if (BChatSDK.config.publicChatRoomLifetimeMinutes == 0) {
                 [threads addObject:thread];
             } else {

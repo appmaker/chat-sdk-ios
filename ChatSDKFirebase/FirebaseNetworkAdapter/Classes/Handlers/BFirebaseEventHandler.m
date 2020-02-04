@@ -92,9 +92,7 @@
             // Make sure that we're not in the thread
             // there's an edge case where the user could kill the app and remain
             // a member of a public thread
-            if (!BChatSDK.config.publicChatAutoSubscriptionEnabled) {
-                [thread removeUser:[CCUserWrapper userWithModel:user]];
-            }
+            [thread removeUser:[CCUserWrapper userWithModel:user]];
             
             [thread on];
             
@@ -105,6 +103,21 @@
             [thread metaOn];
         }
     }];
+    
+    [publicThreadsRef observeEventType:FIRDataEventTypeChildRemoved withBlock:^(FIRDataSnapshot * snapshot) {
+        // Returns threads one by one
+        if (snapshot.value != [NSNull null]) {
+            // Make the new thread
+            CCThreadWrapper * thread = [CCThreadWrapper threadWithEntityID:snapshot.key];
+            [thread off];
+            [thread messagesOff]; // We need to turn the messages off incase we rejoin the thread
+            [thread lastMessageOff];
+            [thread metaOff];
+            
+            [BChatSDK.core deleteThread:thread.model];
+        }
+    }];
+    
 }
 
 -(void) contactsOn: (id<PUser>) user {
