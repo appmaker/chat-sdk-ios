@@ -198,7 +198,7 @@
         readReceiptMaxAgeInSeconds = 7 * bDays;
         
         textInputViewMaxCharacters = 0;
-        textInputViewMaxLines = 5;
+        textInputViewMaxLines = 500;
         
         xmppAuthType = @"default";
 
